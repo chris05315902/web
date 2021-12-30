@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Fruit Store</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css"/>
+
+</head>
+<body>
+<div class="container-fluid text-center">
+    <h1>水果線上商店</h1>
+    <h2><p><a class="h2" th:href="@{/users}">商品列表</a></p></h2>
+    <h3><p><a class="h2" th:href="@{/information}">最新公告</a></p></h3>
+    <h4><p><a class="h2" th:href="@{/purchase}">購買細節</a></p></h4>
+    <h5><p><a class="h2" th:href="@{/checkout}">結帳區</a></p></h5>
+
+
+</div>
+</body>
+</html>
