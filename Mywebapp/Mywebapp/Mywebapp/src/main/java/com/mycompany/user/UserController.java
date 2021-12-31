@@ -33,6 +33,8 @@ public class UserController {
 
     @PostMapping("/users/save")
     public String saveUser(User user, RedirectAttributes ra) {
+//        System.out.println(user);
+//        System.out.println(ra);
         service.save(user);
         ra.addFlashAttribute("message", "The user has been saved successfully.");
         return "redirect:/users";
@@ -47,7 +49,7 @@ public class UserController {
         try {
             User user = service.get(id);
             model.addAttribute("user", user);
-            model.addAttribute("pageTitle", "Edit User (ID: " + id + ")");
+            model.addAttribute("pageTitle", "購買 User (ID: " + id + ")");
 
             return "user_from";
         } catch (UserNotFoundException e) {
