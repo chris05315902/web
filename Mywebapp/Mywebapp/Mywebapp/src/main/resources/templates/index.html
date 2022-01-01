@@ -2,17 +2,39 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to the Fruit Store</title>
+    <h1 style="text-align: center;" >Welcome to the Fruit Store</h1>
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css"/>
 
 </head>
-<body>
-<div class="container-fluid text-center">
+<style>
+    .MainPageBackGround {
+        background-image:url('images/background_image_green.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .TextFormat {
+        <!-- background-color: white; -->
+        color: black;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .toCenter {
+        text-align: center;
+    }
+</style>
+
+<body class="MainPageBackGround">
+<div class="toCenter">
     <h1>水果線上商店</h1>
-    <h2><p><a class="h2" th:href="@{/users}">商品列表</a></p></h2>
-    <h3><p><a class="h2" th:href="@{/information}">最新公告</a></p></h3>
-    <h4><p><a class="h2" th:href="@{/purchase}">購買細節</a></p></h4>
-    <h5><p><a class="h2" th:href="@{/checkout}">結帳區</a></p></h5>
+    <img src="images/fruit.jpg" alt="Fruit Photo" width="600" height="400">
+
+    <p><a th:href="@{/users}">商品列表</a></p>
+    <p><a th:href="@{/information}">最新公告</a></p>
+    <p><a th:href="@{/purchase}">購買細節</a></p>
+    <p><a th:href="@{/checkout}">結帳區</a></p>
 
 
 </div>
