@@ -6,7 +6,28 @@
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css"/>
 
 </head>
-<body>
+
+<style>
+    .PageBackground {
+        background-image:url('images/background_image_green.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .TextFormat {
+    <!-- background-color: white; -->
+        color: black;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .toCenter {
+        text-align: center;
+    }
+</style>
+
+<body class="PageBackground">
 <div class="container-fluid text-center">
     <h2><i>商品列表</i></h2>
     <div>
